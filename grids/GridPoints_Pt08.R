@@ -9,7 +9,7 @@ GridPoints_Pt08 <- function(plotgrid = FALSE) {
             y = 350-c(277,266,251,236,220,206),
             grid = rep('E', 6),
             index = 1:6,
-            labels = paste('E',1:6,sep='')),
+            labels = paste('E',formatC(1:6,digits=1,flag='0'),sep='')),
         angle = NA
         )
     GE <- grid$x

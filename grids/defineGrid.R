@@ -43,7 +43,7 @@ defineGrid <- function(dims,lowerLeft,upperLeft,lowerRight=NULL,label=NULL,imgSi
     } else {
         dro$grid <- label
         dro$index <- 1:prod(dims)
-        dro$labels <- paste(label, 1:prod(dims), sep='')
+        dro$labels <- paste(label, formatC(1:prod(dims), digits = 1, flag = '0'), sep='')
     }
     grid <- list(
         x = dro,
